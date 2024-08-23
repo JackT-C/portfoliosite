@@ -246,15 +246,15 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/BeanGoTypeThings/DataHub'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="openVideo('./assets/videos/DatahubDemo.mp4')"
               >
-                Live Demo
+                Demo
               </button>
             </div>
           </div>
@@ -270,15 +270,15 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/JackT-C/courseworkNEA'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="openVideo('./assets/videos/FitnessfirstDemo.mp4')"
               >
-                Live Demo
+                Demo
               </button>
             </div>
           </div>
@@ -294,15 +294,15 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/JackT-C/chess_vs_ai'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="openVideo('./assets/videos/ChessvsAIDEMO.mp4')"
               >
-                Live Demo
+                Demo
               </button>
             </div>
           </div>
@@ -350,4 +350,15 @@
     </footer>
     <script src="script.js"></script>
   </body>
+  <!-- Modal for video playback -->
+<div id="video-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <video id="modal-video" controls>
+      <source id="video-source" src="" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
 </html>
