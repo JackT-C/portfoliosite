@@ -473,3 +473,110 @@ video {
   width: 100%; /* Responsive video width */
   height: auto;
 }
+/* Profile Grid Layout */
+.profile-grid-container {
+  display: grid;
+  grid-template-columns: 150px auto;
+  grid-gap: 40px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+/* Profile Picture */
+.profile-pic img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Profile Text */
+.profile-text {
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.section__text__p1 {
+  font-size: 18px;
+  color: #555;
+}
+
+.title {
+  font-size: 32px;
+  margin: 10px 0;
+  font-weight: 600;
+  color: #222;
+}
+
+.section__text__p2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #666;
+}
+
+/* Bio Styling */
+.bio p {
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 600px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn-container {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-color-2 {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-color-1 {
+  background-color: #28a745;
+  color: white;
+  margin-left: 10px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Social Icons */
+#socials-container {
+  margin-top: 20px;
+}
+
+#socials-container .icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .profile-grid-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .profile-pic img {
+    margin: 0 auto;
+  }
+
+  .profile-text {
+    margin-top: 20px;
+  }
+}

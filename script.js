@@ -4,6 +4,7 @@ function toggleMenu() {
     menu.classList.toggle("open");
     icon.classList.toggle("open");
   }
+  
 
 document.addEventListener("DOMContentLoaded", function() {
   // Get modal element
@@ -34,5 +35,6 @@ document.addEventListener("DOMContentLoaded", function() {
       modalVideo.currentTime = 0; // Reset the video to the start
     }
   };
+
 });
 
