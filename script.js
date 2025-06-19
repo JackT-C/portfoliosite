@@ -21,6 +21,9 @@ const observer = new IntersectionObserver((entries) => {
 
 // Initialize animations on page load
 document.addEventListener("DOMContentLoaded", function() {
+  // Initialize theme first
+  initializeTheme();
+  
   // Pause all animations initially
   const animatedElements = document.querySelectorAll('.fade-in-up, .slide-in-left, .slide-in-right, .bounce-in');
   animatedElements.forEach(el => {
@@ -65,4 +68,66 @@ document.addEventListener("DOMContentLoaded", function() {
   };
 
 });
+
+// Theme functionality
+let currentThemeDropdown = null;
+
+function toggleThemeSelector(event) {
+  const isMobile = window.innerWidth <= 1200;
+  const dropdownId = isMobile ? 'mobile-theme-dropdown' : 'theme-dropdown';
+  const dropdown = document.getElementById(dropdownId);
+  
+  if (currentThemeDropdown && currentThemeDropdown !== dropdown) {
+    currentThemeDropdown.classList.remove('show');
+  }
+  
+  dropdown.classList.toggle('show');
+  currentThemeDropdown = dropdown.classList.contains('show') ? dropdown : null;
+  
+  if (event) {
+    event.stopPropagation();
+  }
+}
+
+function setTheme(themeName) {
+  document.documentElement.setAttribute('data-theme', themeName);
+  localStorage.setItem('selectedTheme', themeName);
+  
+  // Update active state for all theme options
+  document.querySelectorAll('.theme-option').forEach(option => {
+    option.classList.remove('active');
+    if (option.dataset.theme === themeName) {
+      option.classList.add('active');
+    }
+  });
+  
+  // Close all dropdowns
+  document.querySelectorAll('.theme-dropdown').forEach(dropdown => {
+    dropdown.classList.remove('show');
+  });
+  currentThemeDropdown = null;
+}
+
+// Close theme selector when clicking outside
+document.addEventListener('click', function(event) {
+  if (!event.target.closest('.theme-selector')) {
+    document.querySelectorAll('.theme-dropdown').forEach(dropdown => {
+      dropdown.classList.remove('show');
+    });
+    currentThemeDropdown = null;
+  }
+});
+
+// Initialize theme on page load
+function initializeTheme() {
+  const savedTheme = localStorage.getItem('selectedTheme') || 'default';
+  setTheme(savedTheme);
+  
+  // Add click listeners to theme options
+  document.querySelectorAll('.theme-option').forEach(option => {
+    option.addEventListener('click', function() {
+      setTheme(this.dataset.theme);
+    });
+  });
+}
 

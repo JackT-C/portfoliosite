@@ -9,16 +9,7 @@
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Jack Tilford-Carey</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+
     <nav id="hamburger-nav">
       <div class="logo">Jack Tilford-Carey</div>
       <div class="hamburger-menu">
@@ -32,6 +23,37 @@
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+      <div class="theme-selector mobile-theme">
+        <button class="theme-toggle" onclick="toggleThemeSelector()">
+          <span class="theme-icon">🎨</span>
+        </button>
+        <div class="theme-dropdown" id="mobile-theme-dropdown">
+          <div class="theme-option" data-theme="default">
+            <div class="theme-preview default-preview"></div>
+            <span>Default</span>
+          </div>
+          <div class="theme-option" data-theme="dark">
+            <div class="theme-preview dark-preview"></div>
+            <span>Dark</span>
+          </div>
+          <div class="theme-option" data-theme="blue">
+            <div class="theme-preview blue-preview"></div>
+            <span>Ocean</span>
+          </div>
+          <div class="theme-option" data-theme="purple">
+            <div class="theme-preview purple-preview"></div>
+            <span>Purple</span>
+          </div>
+          <div class="theme-option" data-theme="green">
+            <div class="theme-preview green-preview"></div>
+            <span>Nature</span>
+          </div>
+          <div class="theme-option" data-theme="sunset">
+            <div class="theme-preview sunset-preview"></div>
+            <span>Sunset</span>
+          </div>
         </div>
       </div>
     </nav>    <section id="profile">

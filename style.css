@@ -2,6 +2,108 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+/* CSS VARIABLES FOR THEMES */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --text-secondary: rgb(85, 85, 85);
+  --accent-primary: rgb(53, 53, 53);
+  --accent-secondary: rgb(74, 144, 226);
+  --border-color: rgb(163, 163, 163);
+  --card-bg: #ffffff;
+  --nav-bg: #ffffff;
+  --button-hover: #000000;
+  --gradient-1: #ee7752;
+  --gradient-2: #e73c7e;
+  --gradient-3: #23a6d5;
+  --gradient-4: #23d5ab;
+}
+
+/* DARK THEME */
+[data-theme="dark"] {
+  --bg-color: #1a1a1a;
+  --text-color: #ffffff;
+  --text-secondary: #cccccc;
+  --accent-primary: #ffffff;
+  --accent-secondary: #4a90e2;
+  --border-color: #444444;
+  --card-bg: #2d2d2d;
+  --nav-bg: #1a1a1a;
+  --button-hover: #ffffff;
+  --gradient-1: #667eea;
+  --gradient-2: #764ba2;
+  --gradient-3: #f093fb;
+  --gradient-4: #f5576c;
+}
+
+/* BLUE/OCEAN THEME */
+[data-theme="blue"] {
+  --bg-color: #f0f8ff;
+  --text-color: #1e3a8a;
+  --text-secondary: #3b82f6;
+  --accent-primary: #1d4ed8;
+  --accent-secondary: #06b6d4;
+  --border-color: #93c5fd;
+  --card-bg: #ffffff;
+  --nav-bg: #f0f8ff;
+  --button-hover: #1e40af;
+  --gradient-1: #3b82f6;
+  --gradient-2: #06b6d4;
+  --gradient-3: #0ea5e9;
+  --gradient-4: #8b5cf6;
+}
+
+/* PURPLE THEME */
+[data-theme="purple"] {
+  --bg-color: #faf5ff;
+  --text-color: #581c87;
+  --text-secondary: #7c3aed;
+  --accent-primary: #6b21a8;
+  --accent-secondary: #a855f7;
+  --border-color: #c4b5fd;
+  --card-bg: #ffffff;
+  --nav-bg: #faf5ff;
+  --button-hover: #4c1d95;
+  --gradient-1: #8b5cf6;
+  --gradient-2: #a855f7;
+  --gradient-3: #c084fc;
+  --gradient-4: #e879f9;
+}
+
+/* GREEN/NATURE THEME */
+[data-theme="green"] {
+  --bg-color: #f0fdf4;
+  --text-color: #14532d;
+  --text-secondary: #16a34a;
+  --accent-primary: #15803d;
+  --accent-secondary: #10b981;
+  --border-color: #86efac;
+  --card-bg: #ffffff;
+  --nav-bg: #f0fdf4;
+  --button-hover: #14532d;
+  --gradient-1: #10b981;
+  --gradient-2: #059669;
+  --gradient-3: #34d399;
+  --gradient-4: #6ee7b7;
+}
+
+/* SUNSET THEME */
+[data-theme="sunset"] {
+  --bg-color: #fff7ed;
+  --text-color: #9a3412;
+  --text-secondary: #ea580c;
+  --accent-primary: #c2410c;
+  --accent-secondary: #f97316;
+  --border-color: #fed7aa;
+  --card-bg: #ffffff;
+  --nav-bg: #fff7ed;
+  --button-hover: #7c2d12;
+  --gradient-1: #f97316;
+  --gradient-2: #ea580c;
+  --gradient-3: #fb923c;
+  --gradient-4: #fdba74;
+}
+
 /* ANIMATIONS */
 @keyframes fadeInUp {
   from {
