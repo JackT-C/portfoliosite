@@ -9,27 +9,22 @@
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-
-    <nav id="hamburger-nav">
+    <!-- Desktop Navigation -->
+    <nav id="desktop-nav">
       <div class="logo">Jack Tilford-Carey</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
-      <div class="theme-selector mobile-theme">
+      <div class="theme-selector desktop-theme">
         <button class="theme-toggle" onclick="toggleThemeSelector()">
           <span class="theme-icon">🎨</span>
         </button>
-        <div class="theme-dropdown" id="mobile-theme-dropdown">
+        <div class="theme-dropdown" id="desktop-theme-dropdown">
           <div class="theme-option" data-theme="default">
             <div class="theme-preview default-preview"></div>
             <span>Default</span>
@@ -56,29 +51,34 @@
           </div>
         </div>
       </div>
-    </nav>    <section id="profile">
-      <div class="section__pic-container slide-in-left">
-        <img src="./assets/profile-pic.png" alt="Jack Tilford-Carey profile picture" class="float-animation" />
-      </div>
-      <div class="section__text fade-in-up">
-        <p class="section__text__p1 delay-100">Hello, I'm</p>
-        <h1 class="title gradient-text delay-200">Jack Tilford-Carey</h1>
-        <p class="section__text__p2 delay-300">University Student</p>
-    
-        <!-- New Bio Section -->
-        <div class="bio fade-in-up delay-400" id="bio-text">
-          <p>
-            I'm a third-year Computer Science student at the University of Reading, working towards a First Class Honours.
-            I am currently working as a software developer for eli lilly as part of my placement year module.
-          </p>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Jack Tilford-Carey</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        
-        <div class="btn-container bounce-in delay-500">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/jacktilfordcareycv.pdf')"
-          >
-            Download CV
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+      <div class="theme-selector mobile-theme">
+        <button class="theme-toggle" onclick="toggleThemeSelector()">
+          <span class="theme-icon">🎨</span>
+        </button>
+        <div class="theme-dropdown" id="mobile-theme-dropdown">
+          <div class="theme-option" data-theme="default">
+            <div class="theme-preview default-preview"></div>
+            <span>Default</span>
+          </div>
+          <div class="theme-option" data-theme="dark">
+            <div class="theme-
           </button>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
             Contact Info
