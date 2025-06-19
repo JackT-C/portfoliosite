@@ -5,6 +5,7 @@
     }
     .about-containers {
       flex-wrap: wrap;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
     #contact,
     #projects {
@@ -44,6 +45,7 @@
     }
     .about-containers {
       margin-top: 0;
+      grid-template-columns: 1fr;
     }
   }
   
@@ -99,5 +101,14 @@
     }
     .text-container {
       text-align: justify;
+    }
+    .about-containers {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    
+    /* Reduce animation delays on mobile */
+    .delay-100, .delay-200, .delay-300, .delay-400, .delay-500, .delay-600 {
+      animation-delay: 0.1s;
     }
   }

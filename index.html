@@ -34,25 +34,24 @@
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Jack Tilford-Carey profile picture" />
+    </nav>    <section id="profile">
+      <div class="section__pic-container slide-in-left">
+        <img src="./assets/profile-pic.png" alt="Jack Tilford-Carey profile picture" class="float-animation" />
       </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Jack Tilford-Carey</h1>
-        <p class="section__text__p2">University Student</p>
+      <div class="section__text fade-in-up">
+        <p class="section__text__p1 delay-100">Hello, I'm</p>
+        <h1 class="title gradient-text delay-200">Jack Tilford-Carey</h1>
+        <p class="section__text__p2 delay-300">University Student</p>
     
         <!-- New Bio Section -->
-        <div class="bio" id="bio-text">
+        <div class="bio fade-in-up delay-400" id="bio-text">
           <p>
-            I'm a second-year Computer Science student at the University of Reading, working towards a First Class Honours.
-            I have a strong foundation in programming languages like C++, Java, and Python. I am seeking a Year in Industry placement to further develop my expertise.
+            I'm a third-year Computer Science student at the University of Reading, working towards a First Class Honours.
+            I am currently working as a software developer for eli lilly as part of my placement year module.
           </p>
         </div>
         
-        <div class="btn-container">
+        <div class="btn-container bounce-in delay-500">
           <button
             class="btn btn-color-2"
             onclick="window.open('./assets/jacktilfordcareycv.pdf')"
@@ -63,31 +62,30 @@
             Contact Info
           </button>
         </div>
-        <div id="socials-container">
+        <div id="socials-container" class="slide-in-right delay-600">
           <img
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
-            class="icon"
+            class="icon pulse-animation"
             onclick="location.href='https://linkedin.com/'"
           />
           <img
             src="./assets/github.png"
             alt="My Github profile"
-            class="icon"
+            class="icon pulse-animation"
             onclick="location.href='https://github.com/'"
           />
         </div>
       </div>
     </section>
-    </section>
-    <section id="experience">
-      <h1 class="title">Experience</h1>
+    </section>    <section id="experience">
+      <h1 class="title fade-in-up">Experience</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          <div class="details-container">
+          <div class="details-container slide-in-left delay-200">
             <h2 class="experience-sub-title">Programming Languages</h2>
             <div class="article-container">
-              <article>
+              <article class="fade-in-up delay-100">
                 <img
                   src="./assets/checkmark.png"
                   alt="Experience icon"
@@ -98,7 +96,7 @@
                   <p>Experienced</p>
                 </div>
               </article>
-              <article>
+              <article class="fade-in-up delay-200">
                 <img
                   src="./assets/checkmark.png"
                   alt="Experience icon"
@@ -109,7 +107,7 @@
                   <p>Experienced</p>
                 </div>
               </article>
-              <article>
+              <article class="fade-in-up delay-300">
                 <img
                   src="./assets/checkmark.png"
                   alt="Experience icon"
@@ -120,7 +118,7 @@
                   <p>Experienced</p>
                 </div>
               </article>
-              <article>
+              <article class="fade-in-up delay-400">
                 <img
                   src="./assets/checkmark.png"
                   alt="Experience icon"
@@ -131,7 +129,7 @@
                   <p>Basic</p>
                 </div>
               </article>
-              <article>
+              <article class="fade-in-up delay-500">
                 <img
                   src="./assets/checkmark.png"
                   alt="Experience icon"
@@ -142,7 +140,7 @@
                   <p>Intermediate</p>
                 </div>
               </article>
-              <article>
+              <article class="fade-in-up delay-600">
                 <img
                   src="./assets/checkmark.png"
                   alt="Experience icon"
@@ -155,10 +153,10 @@
               </article>
             </div>
           </div>
-          <div class="details-container">
+          <div class="details-container slide-in-right delay-300">
             <h2 class="experience-sub-title">Tools used</h2>
             <div class="article-container">
-              <article>
+              <article class="fade-in-up delay-100">
                 <img
                   src="./assets/checkmark.png"
                   alt="Experience icon"
@@ -169,7 +167,7 @@
                   <p>Basic</p>
                 </div>
               </article>
-              <article>
+              <article class="fade-in-up delay-200">
                 <img
                   src="./assets/checkmark.png"
                   alt="Experience icon"
@@ -180,7 +178,7 @@
                   <p>Intermediate</p>
                 </div>
               </article>
-              <article>
+              <article class="fade-in-up delay-300">
                 <img
                   src="./assets/checkmark.png"
                   alt="Experience icon"
@@ -191,7 +189,7 @@
                   <p>Intermediate</p>
                 </div>
               </article>
-              <article>
+              <article class="fade-in-up delay-400">
                 <img
                   src="./assets/checkmark.png"
                   alt="Experience icon"
@@ -202,7 +200,7 @@
                   <p>Basic</p>
                 </div>
               </article>
-              <article>
+              <article class="fade-in-up delay-500">
                 <img
                   src="./assets/checkmark.png"
                   alt="Experience icon"
@@ -214,7 +212,7 @@
                   <p>Intermediate</p>
                 </div>
               </article>
-              <article>
+              <article class="fade-in-up delay-600">
                 <img
                   src="./assets/checkmark.png"
                   alt="Experience icon"
@@ -233,16 +231,39 @@
       <img
         src="./assets/arrow.png"
         alt="Arrow icon"
-        class="icon arrow"
+        class="icon arrow float-animation"
         onclick="location.href='./#projects'"
       />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
+    </section>    <section id="projects">
+      <p class="section__text__p1 fade-in-up">Browse My Recent</p>
+      <h1 class="title fade-in-up delay-100">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          <div class="details-container color-container">
+          <div class="details-container color-container bounce-in delay-200">
+            <div class="article-container">
+              <img
+                src="./assets/project-4.png"
+                alt="Restaurant POS Project"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Restaurant POS System</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/JackT-C/restaurant-pos'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://restaurant-pos-bilingual-fbe2ee64f280.herokuapp.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container bounce-in delay-300">
             <div class="article-container">
               <img
                 src="./assets/project-1.png"
@@ -266,7 +287,7 @@
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
+          <div class="details-container color-container bounce-in delay-400">
             <div class="article-container">
               <img
                 src="./assets/project-2.png"
@@ -290,7 +311,7 @@
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
+          <div class="details-container color-container bounce-in delay-500">
             <div class="article-container">
               <img
                 src="./assets/project-3.png"
@@ -319,27 +340,26 @@
       <img
         src="./assets/arrow.png"
         alt="Arrow icon"
-        class="icon arrow"
+        class="icon arrow float-animation"
         onclick="location.href='./#contact'"
       />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
+    </section>    <section id="contact">
+      <p class="section__text__p1 fade-in-up">Get in Touch</p>
+      <h1 class="title fade-in-up delay-100">Contact Me</h1>
+      <div class="contact-info-upper-container slide-in-up delay-200">
+        <div class="contact-info-container bounce-in delay-300">
           <img
             src="./assets/email.png"
             alt="Email icon"
-            class="icon contact-icon email-icon"
+            class="icon contact-icon email-icon pulse-animation"
           />
           <p><a href="mailto:jacktilfordcarey@gmail.com">jacktilfordcarey@gmail.com</a></p>
         </div>
-        <div class="contact-info-container">
+        <div class="contact-info-container bounce-in delay-400">
           <img
             src="./assets/linkedin.png"
             alt="LinkedIn icon"
-            class="icon contact-icon"
+            class="icon contact-icon pulse-animation"
           />
           <p><a href="https://www.linkedin.com">LinkedIn</a></p>
         </div>
