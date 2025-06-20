@@ -31,8 +31,8 @@
 [data-theme="dark"] {
   --bg-color: #0d1117;
   --bg-color-2: #161b22;
-  --text-color: #e6edf3;
-  --text-secondary: #7d8590;
+  --text-color: #f0f6fc;
+  --text-secondary: #8b949e;
   --accent-primary: #58a6ff;
   --accent-secondary: #58a6ff;
   --border-color: #30363d;
@@ -43,10 +43,11 @@
   --gradient-2: #f78166;
   --gradient-3: #79c0ff;
   --gradient-4: #a5f3fc;
-  --primary-color: #58a6ff;
-  --secondary-color: #7d8590;
-  --secondary-color-2: #6e7681;
-  --accent-color: #58a6ff;  --shadow-color: rgba(0, 0, 0, 0.4);
+  --primary-color: #f0f6fc;
+  --secondary-color: #c9d1d9;
+  --secondary-color-2: #8b949e;
+  --accent-color: #58a6ff;
+  --shadow-color: rgba(0, 0, 0, 0.4);
   --particle-color: #58a6ff;
   --glow-color: #58a6ff;
 }
@@ -1047,6 +1048,20 @@ video {
   box-shadow: var(--shadow-color) 0 8px 20px;
 }
 
+/* Dark theme skill badges */
+[data-theme="dark"] .skill-badge {
+  background: linear-gradient(135deg, #58a6ff, #79c0ff);
+  color: #0d1117;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(88, 166, 255, 0.3);
+}
+
+[data-theme="dark"] .skill-badge:hover {
+  background: linear-gradient(135deg, #79c0ff, #a5f3fc);
+  color: #0d1117;
+  box-shadow: 0 8px 20px rgba(88, 166, 255, 0.4);
+}
+
 /* Responsive adjustments for profile */
 @media screen and (max-width: 768px) {
   .profile-grid-container {
@@ -1299,4 +1314,71 @@ nav {
 .btn-color-2:hover {
   background-color: var(--accent-primary);
   color: var(--bg-color);
+}
+
+/* DARK THEME TEXT ENHANCEMENTS */
+[data-theme="dark"] p,
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6,
+[data-theme="dark"] span,
+[data-theme="dark"] div {
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .section__text__p1,
+[data-theme="dark"] .section__text__p2 {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .title {
+  color: var(--text-color);
+  background: linear-gradient(135deg, #58a6ff, #79c0ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+[data-theme="dark"] .bio p {
+  color: var(--secondary-color);
+}
+
+[data-theme="dark"] .experience-sub-title {
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .project-title {
+  color: var(--text-color);
+}
+
+[data-theme="dark"] article h3 {
+  color: var(--text-color);
+}
+
+[data-theme="dark"] article p {
+  color: var(--secondary-color);
+}
+
+/* Dark theme navigation */
+[data-theme="dark"] .nav-links a {
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .logo {
+  color: var(--text-color);
+}
+
+/* Dark theme contact */
+[data-theme="dark"] .contact-info-container p,
+[data-theme="dark"] .contact-info-container a {
+  color: var(--text-color);
+}
+
+/* Dark theme footer */
+[data-theme="dark"] footer p,
+[data-theme="dark"] footer a {
+  color: var(--text-color);
 }

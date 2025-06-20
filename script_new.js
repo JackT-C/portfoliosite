@@ -279,6 +279,7 @@ document.addEventListener('click', function(event) {
 // Initialize theme immediately to prevent flash
 (function() {
   const savedTheme = localStorage.getItem('selectedTheme') || 'dark';
+  localStorage.setItem('selectedTheme', savedTheme); // Ensure dark is saved as default
   document.documentElement.setAttribute('data-theme', savedTheme);
 })();
 
