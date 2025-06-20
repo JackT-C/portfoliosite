@@ -276,9 +276,15 @@ document.addEventListener('click', function(event) {
   }
 });
 
+// Initialize theme immediately to prevent flash
+(function() {
+  const savedTheme = localStorage.getItem('selectedTheme') || 'dark';
+  document.documentElement.setAttribute('data-theme', savedTheme);
+})();
+
 // Initialize theme on page load
 function initializeTheme() {
-  const savedTheme = localStorage.getItem('selectedTheme') || 'default';
+  const savedTheme = localStorage.getItem('selectedTheme') || 'dark';
   setTheme(savedTheme);
   
   document.querySelectorAll('.theme-option').forEach(option => {

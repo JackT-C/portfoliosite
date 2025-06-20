@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,9 +12,7 @@
     <!-- Desktop Navigation -->
     <nav id="desktop-nav">
       <div class="logo">Jack Tilford-Carey</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
+      <div>        <ul class="nav-links">
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -23,13 +21,12 @@
       <div class="theme-selector desktop-theme">
         <button class="theme-toggle" onclick="toggleThemeSelector()">
           <span class="theme-icon">🎨</span>
-        </button>
-        <div class="theme-dropdown" id="desktop-theme-dropdown">
+        </button>        <div class="theme-dropdown" id="desktop-theme-dropdown">
           <div class="theme-option" data-theme="default">
             <div class="theme-preview default-preview"></div>
             <span>Default</span>
           </div>
-          <div class="theme-option" data-theme="dark">
+          <div class="theme-option active" data-theme="dark">
             <div class="theme-preview dark-preview"></div>
             <span>Dark</span>
           </div>
@@ -60,9 +57,7 @@
           <span></span>
           <span></span>
           <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        </div>        <div class="menu-links">
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
@@ -76,7 +71,7 @@
             <div class="theme-preview default-preview"></div>
             <span>Default</span>
           </div>
-          <div class="theme-option" data-theme="dark">
+          <div class="theme-option active" data-theme="dark">
             <div class="theme-preview dark-preview"></div>
             <span>Dark</span>
           </div>
@@ -98,87 +93,53 @@
           </div>
         </div>
       </div>
-    </nav>
-
-    <!-- Profile Section -->
+    </nav>    <!-- Enhanced Profile Section with About Info -->
     <section id="profile">
-      <div class="section__pic-container fade-in-up">
-        <img src="./assets/profile-pic.png" alt="Jack Tilford-Carey profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1 fade-in-up delay-200">Hello, I'm</p>
-        <h1 class="title fade-in-up delay-300">Jack Tilford-Carey</h1>
-        <p class="section__text__p2 fade-in-up delay-400">Software Developer</p>
-        <div class="btn-container slide-in-up delay-500">
-          <button class="btn btn-color-2" onclick="window.open('./assets/jacktilfordcareycv.pdf')">
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
+      <div class="profile-grid-container">
+        <div class="section__pic-container fade-in-up">
+          <img src="./assets/profile-pic.png" alt="Jack Tilford-Carey profile picture" />
         </div>
-        <div id="socials-container" class="slide-in-right delay-600">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon pulse-animation"
-            onclick="location.href='https://linkedin.com/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon pulse-animation"
-            onclick="location.href='https://github.com/'"
-          />        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow float-animation"
-        onclick="location.href='./#about'"
-      />
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-      <p class="section__text__p1 fade-in-up">Get To Know More</p>
-      <h1 class="title fade-in-up delay-100">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container slide-in-left delay-200">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container slide-in-right delay-300">
-          <div class="about-containers">
-            <div class="details-container bounce-in delay-400">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>2+ years <br />Software Development</p>
-            </div>
-            <div class="details-container bounce-in delay-500">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Computer Science Student<br />University</p>
-            </div>
+        <div class="section__text">
+          <p class="section__text__p1 fade-in-up delay-200">Hello, I'm</p>
+          <h1 class="title fade-in-up delay-300">Jack Tilford-Carey</h1>
+          <p class="section__text__p2 fade-in-up delay-400">Computer Science Student and Software Engineer</p>
+          
+          <!-- About Bio -->
+          <div class="bio fade-in-up delay-500">
+            <p>I'm a third-year Computer Science student at the University of Reading, working towards a First Class Honours.
+            I am currently working as a software developer for eli lilly as part of my placement year module.</p>
           </div>
-          <div class="text-container fade-in-up delay-600">
-            <p>
-              I am a passionate software developer with experience in various programming languages
-              and technologies. I enjoy creating efficient and user-friendly applications that solve
-              real-world problems. My journey in programming started with a curiosity about how
-              technology works, and has evolved into a passion for building innovative solutions.
-            </p>
+          
+          <!-- Skills Preview -->
+          <div class="skills-preview fade-in-up delay-600">
+            <div class="skill-badge">JavaScript</div>
+            <div class="skill-badge">Python</div>
+            <div class="skill-badge">React</div>
+            <div class="skill-badge">Node.js</div>
+            <div class="skill-badge">AI/ML</div>
+          </div>
+          
+          <div class="btn-container slide-in-up delay-700">
+            <button class="btn btn-color-2" onclick="window.open('./assets/jacktilfordcareycv.pdf')">
+              Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+              Contact Info
+            </button>
+          </div>
+          <div id="socials-container" class="slide-in-right delay-800">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon pulse-animation"
+              onclick="location.href='https://linkedin.com/'"
+            />
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon pulse-animation"
+              onclick="location.href='https://github.com/'"
+            />
           </div>
         </div>
       </div>
@@ -188,9 +149,7 @@
         class="icon arrow float-animation"
         onclick="location.href='./#experience'"
       />
-    </section>
-
-    <section id="experience">
+    </section>    <section id="experience">
       <h1 class="title fade-in-up">Experience</h1>
       <div class="experience-details-container">
         <div class="about-containers">
@@ -495,11 +454,10 @@
       <button class="floating-btn" onclick="toggleFloatingThemes()">
         <span class="theme-icon">🎨</span>
       </button>
-      <div class="floating-themes" id="floating-themes">
-        <div class="floating-theme-option" data-theme="default" title="Default">
+      <div class="floating-themes" id="floating-themes">        <div class="floating-theme-option" data-theme="default" title="Default">
           <div class="theme-preview default-preview"></div>
         </div>
-        <div class="floating-theme-option" data-theme="dark" title="Dark">
+        <div class="floating-theme-option active" data-theme="dark" title="Dark">
           <div class="theme-preview dark-preview"></div>
         </div>
         <div class="floating-theme-option" data-theme="blue" title="Ocean">
